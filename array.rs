@@ -1,6 +1,7 @@
-let arr = [10, 20, 30];
-println!("{} {} {}", arr[0], arr[1], arr[2]);
-
-for v in & arr {
-println!("{}", v);
+fn main() {
+    let a: [isize; 4] = [1, 2, 3, 4];
+    println!("{:?}", a); // => [1, 2, 3]
+    for elm in &a {
+        println!("{}", elm);
+    }
 }
